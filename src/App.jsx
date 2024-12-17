@@ -40,7 +40,7 @@ setTweets(formattedTweets);
   return (
     <AppContext.Provider value={{ user, theme, setTheme }}>
       <div className={`app ${theme}`}>
-        <Header />
+        {/* <Header /> */}
         <Sidebar />
         <main>
           <Profile />

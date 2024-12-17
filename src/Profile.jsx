@@ -7,7 +7,7 @@ const Profile = () => {
   return (
     <div className="profile">
      
-      <h2>{user.name}</h2>
+     <h1>Twitter Clone</h1>
     </div>
   );
 };

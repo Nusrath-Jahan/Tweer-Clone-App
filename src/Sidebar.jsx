@@ -16,7 +16,7 @@ const Sidebar = () => {
   
   return (
     <div className="sidebar">
-        <h1>Twitter Clone</h1>
+        {/* <h1>Twitter Clone</h1> */}
         <button  className="toggle-btn" onClick={toggleTheme}>
         {theme === 'light' ? 'Dark' : 'Light'} Mode
       </button>

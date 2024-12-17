@@ -4,15 +4,13 @@ body {
   padding: 0;
 }
 
-
 header {
-  background-color: #1DA1F2;
+  background-color: #1da1f2;
   color: white;
   text-align: center;
   padding: 20px;
   display: flex;
   justify-content: space-between;
- 
 }
 
 .toggle-btn {
@@ -48,13 +46,14 @@ header {
   border-radius: 50%;
 }
 
-.sidebar, .right-sidebar {
+.sidebar,
+.right-sidebar {
   flex: 0.2;
   background-color: black;
   color: #f6ebeb;
   position: fixed;
   text-align: left;
-  padding: 10px 50px 220px 50px;
+  padding: 50px 50px 220px 50px;
 }
 
 main {
@@ -70,10 +69,10 @@ main {
 }
 form {
   margin-bottom: 20px;
- 
 }
 
-.sidebar-item, .right-sidebar-item {
+.sidebar-item,
+.right-sidebar-item {
   margin: 20px 0;
 }
 
@@ -94,7 +93,6 @@ form {
   padding: 10px 80px 10px 80px;
   border-radius: 20px;
   cursor: pointer;
-  
 }
 /* Tablet view */
 @media (max-width: 768px) {

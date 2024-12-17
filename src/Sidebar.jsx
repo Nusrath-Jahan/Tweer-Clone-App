@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useContext } from 'react';
+import { AppContext } from './App';
 import HomeIcon from '@mui/icons-material/Home';
 import SearchIcon from '@mui/icons-material/Search';
 import Messages from '@mui/icons-material/MailOutline';
@@ -7,8 +8,18 @@ import Profile from '@mui/icons-material/PermIdentity';
 import More from '@mui/icons-material/AutoAwesomeMotion';
 
 const Sidebar = () => {
+  const { theme, setTheme } = useContext(AppContext);
+  
+    const toggleTheme = () => {
+      setTheme(theme === 'light' ? 'dark' : 'light');
+    };
+  
   return (
     <div className="sidebar">
+        <h1>Twitter Clone</h1>
+        <button  className="toggle-btn" onClick={toggleTheme}>
+        {theme === 'light' ? 'Dark' : 'Light'} Mode
+      </button>
       <div className="sidebar-item">
       <HomeIcon style={{ marginRight: '10px' }} />
       Home

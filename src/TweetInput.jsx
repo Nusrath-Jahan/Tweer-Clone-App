@@ -1,5 +1,6 @@
 import React, { useState, useContext } from 'react';
 import { AppContext } from './App';
+import "./TweetInputModule.css";
 
 const TweetInput = ({ addTweet }) => {
   const [tweet, setTweet] = useState('');
@@ -17,9 +18,11 @@ const TweetInput = ({ addTweet }) => {
         type="text"
         value={tweet}
         onChange={(e) => setTweet(e.target.value)}
+         className="tweet-input"
         placeholder="What's happening?"
       />
-      <button type="submit">Tweet</button>
+      
+      <button className="post-input" type="submit">Tweet</button>
     </form>
   );
 };
